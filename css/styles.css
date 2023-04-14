@@ -3,10 +3,17 @@
     --secondary:#004a87;
     --font-color:#000;
 }
+.containerBusqueda {
+    position: relative;
+    height: 70px;
+}
 .buscar {
     padding: .3125rem;
     margin-bottom: 60px;
     position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .buscar input {
     width: 0;
@@ -29,12 +36,27 @@
     line-height: 55px;
     text-align: center;
     color: var(--primary);
-    font-size: 20x;
     border-radius: 50%;
     cursor: pointer;
 }
 .buscar:hover input {
     width: 240px;
+}
+
+.listarMaterias {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.listarMaterias input {
+    width: 240px;
+    height: 2.5rem;
+    border: 1px solid silver;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+    color: var(--font-color);
+    border-radius: 1.875rem;
 }
 
 .card-container{
