@@ -1,0 +1,49 @@
+:root{
+    --primary:#FFFFFF;
+    --secondary:#004a87;
+    --font-color:#000;
+}
+.buscar {
+    
+    padding: .3125rem;
+    margin-bottom: 60px;
+}
+.buscar input {
+    width: 15rem;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+    color: var(--font-color);
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 1.875rem;
+}
+
+.card-container{
+    border:2px solid var(--secondary);
+    border-radius: .625rem;
+    display: flex;
+    color:var(--font-color);
+    flex-flow: row nowrap;
+    padding: 1.25rem;
+    overflow: hidden;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
+    box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
+}
+
+.photo{
+    border-radius: 50%;
+    
+}
+
+.btn-card{
+    background-color: var(--secondary);
+    border-radius: .625rem;
+    text-align: center;
+    min-height: 2.5rem;
+    min-width: 12.5rem;
+    color:var(--primary);
+
+}
