@@ -59,33 +59,58 @@
     border-radius: 1.875rem;
 }
 
-.card-container{
-    position: fixed;
-    top: 80px;
-    border:2px solid var(--secondary);
-    border-radius: .625rem;
-    display: flex;
-    color:var(--font-color);
-    flex-flow: row nowrap;
-    padding: 1.25rem;
-    overflow: hidden;
-    justify-content: space-evenly;
-    -webkit-box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
-    box-shadow: 0 .625rem 2rem -0.6875rem rgba(0,0,0,0.75);
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  transition: 0.3s;
+  padding: 20px;
+  width: 40%;
+  min-width: 300px;
+  border:.0938rem solid var(--secondary);
+  border-radius: .625rem;
+  margin:1.25rem;
 }
 
-.photo{
-    border-radius: 50%;
-    
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-card{
-    background-color: var(--secondary);
-    border-radius: .625rem;
-    text-align: center;
-    min-height: 2.5rem;
-    min-width: 12.5rem;
-    color:var(--primary);
+.container-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 16px;
+  margin-right: 1.25rem;
+   
+}
 
+.container-card p,
+.container-card h4 {
+  margin: 0;
+}
+
+.container-card input {
+  background-color: var(--secondary);
+  margin-top: 10px;
+  border-radius: .3125rem;
+  padding: .3125rem;
+  border: none;
+  color: #fff;
+}
+
+.container-card p{
+  white-space: nowrap;
+}
+
+.container-card button{
+  
+}
+
+.card img {
+  width: 4.375rem;
+  min-height: 4.375rem;
+  margin-left: 1.25rem;
+  border-radius: 50%;
 }
