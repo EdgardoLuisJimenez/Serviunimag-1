@@ -14,6 +14,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    margin-left: 40px;
 }
 .buscar input {
     width: 0;
@@ -57,18 +58,22 @@
     font-size: 1.125rem;
     color: var(--font-color);
     border-radius: 1.875rem;
+    margin-right: 40px;
+}
+
+.containerCards {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-evenly;
-  flex-flow: row nowrap;
   transition: 0.3s;
   padding: 20px;
-  width: 40%;
+  width: 20%;
   min-width: 300px;
-  border:.0938rem solid var(--secondary);
   border-radius: .625rem;
   margin:1.25rem;
 }
